@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npm -v)",
+      "Read(//usr/local/**)",
+      "Bash(command -v node)",
+      "Bash(command -v brew)",
+      "Bash(brew --version)",
+      "Read(//opt/homebrew/**)",
+      "Bash(sw_vers)",
+      "Bash(mkdir -p ~/.local)",
+      "Read(//Users/slaimanalshaya/**)",
+      "Bash(curl -fL# -o node.tar.gz \"https://nodejs.org/dist/v22.14.0/node-v22.14.0-darwin-arm64.tar.gz\")",
+      "Bash(tar -xzf node.tar.gz)",
+      "Bash(rm node.tar.gz)",
+      "Bash(mv node-v22.14.0-darwin-arm64 node)"
+    ]
+  }
+}
