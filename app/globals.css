@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Base */
+  --color-background: #ffffff;
+  --color-foreground: #0b0b0f;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Neutrals */
+  --color-muted: #f6f6f8;
+  --color-muted-foreground: #6b7080;
+  --color-border: #e6e6ea;
+
+  /* Brand — "Summit" indigo, the primary accent for CTAs, links, focus states */
+  --color-brand: #4f46e5;
+  --color-brand-dark: #3730a3;
+  --color-brand-light: #eef0ff;
+
+  /* Gold — the "sunrise at the summit" accent, used sparingly for highlights */
+  --color-gold: #f2a93b;
+
+  /* Night — dark sections (hero, footer, contrast blocks) */
+  --color-night: #0b0b0f;
+  --color-night-foreground: #f5f5f7;
+  --color-night-muted: #9a9aa5;
+  --color-night-border: #ffffff1a;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Brand gradient — used sparingly: hero glows, key CTAs, section dividers */
+.gradient-brand {
+  background-image: linear-gradient(135deg, var(--color-brand) 0%, var(--color-gold) 100%);
+}
+
+.text-gradient-brand {
+  background-image: linear-gradient(135deg, var(--color-brand) 0%, var(--color-gold) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Soft ambient glow blobs for hero/CTA sections */
+.glow-blob {
+  background: radial-gradient(circle at center, var(--color-brand) 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.35;
 }

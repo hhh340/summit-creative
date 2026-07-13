@@ -14,7 +14,8 @@
       "Bash(curl -fL# -o node.tar.gz \"https://nodejs.org/dist/v22.14.0/node-v22.14.0-darwin-arm64.tar.gz\")",
       "Bash(tar -xzf node.tar.gz)",
       "Bash(rm node.tar.gz)",
-      "Bash(mv node-v22.14.0-darwin-arm64 node)"
+      "Bash(mv node-v22.14.0-darwin-arm64 node)",
+      "Bash(curl -s http://localhost:3000/quote)"
     ]
   }
 }
