@@ -4,20 +4,17 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const steps = [
-  { title: "Discover", description: "We learn your business, goals, and customers." },
-  { title: "Design", description: "You review real designs, not vague mockups." },
-  { title: "Build", description: "We develop, test, and refine until it's right." },
-  { title: "Launch & Grow", description: "We ship it — then help you improve it." },
+  { title: "Tell me about your business", description: "Fill out a short form." },
+  { title: "I design your site", description: "Based on what you told me." },
+  { title: "You review it", description: "Tell me what you'd like changed." },
+  { title: "It goes live", description: "Your website is ready in 2 days." },
 ];
 
 export function ProcessTeaser() {
   return (
     <Section>
       <Container>
-        <SectionHeading
-          eyebrow="How it works"
-          title="From first call to launch, in four steps"
-        />
+        <SectionHeading eyebrow="How it works" title="Simple, in four steps" />
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (

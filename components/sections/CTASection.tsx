@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/Button";
 
 export function CTASection({
   title = "Ready to build something worth showing off?",
-  description = "Tell us about your project and we'll come back with a clear plan, timeline, and price — usually within one business day.",
+  description = "Tell me about your project and I'll get back to you within one business day.",
   primaryLabel = "Request a Quote",
   primaryHref = "/quote",
-  secondaryLabel = "Talk to Us",
+  secondaryLabel = "Talk to Me",
   secondaryHref = "/contact",
 }: {
   title?: string;

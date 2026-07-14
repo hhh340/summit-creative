@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Summit Creative",
   tagline: "Built to impress. Designed to convert.",
   description:
-    "Summit Creative designs and builds premium websites that build trust, generate leads, and grow revenue — for restaurants, medical practices, real estate teams, and ambitious businesses of every kind.",
+    "Summit Creative designs and builds simple, professional websites for small businesses — one flat price, delivered in 2 days.",
   url: "https://summitcreative.co",
   email: "hello@summitcreative.co",
   links: {
@@ -32,7 +32,6 @@ export const footerNav: { title: string; links: NavLink[] }[] = [
     links: [
       { label: "About", href: "/about" },
       { label: "Process", href: "/process" },
-      { label: "Industries", href: "/industries" },
       { label: "Blog", href: "/blog" },
     ],
   },

@@ -84,7 +84,7 @@ export default async function CaseStudyPage({
                 </p>
               </div>
               <div>
-                <h2 className="text-xl font-semibold">Our Approach</h2>
+                <h2 className="text-xl font-semibold">My Approach</h2>
                 <p className="mt-3 leading-relaxed text-muted-foreground">
                   {study.approach}
                 </p>
@@ -134,8 +134,8 @@ export default async function CaseStudyPage({
       </Section>
 
       <CTASection
-        title="Want results like this for your business?"
-        description="Tell us about your project — we'll come back with a clear plan, timeline, and price."
+        title="Want a site like this for your business?"
+        description="Tell me about your project and I'll get back to you within one business day."
       />
     </>
   );

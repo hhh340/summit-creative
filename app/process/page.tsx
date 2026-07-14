@@ -7,8 +7,7 @@ import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
   title: "Our Process",
-  description:
-    "From discovery to launch in a few weeks — a clear, transparent process with no disappearing acts.",
+  description: "A simple, four-step process — website delivered in 2 days.",
 };
 
 export default function ProcessPage() {
@@ -19,11 +18,10 @@ export default function ProcessPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Badge className="mx-auto">Our Process</Badge>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-              From first call to launch, with total clarity
+              Simple, fast, and easy to follow
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              No black boxes. You&apos;ll always know what&apos;s happening, what&apos;s
-              next, and when you&apos;ll launch.
+              No confusing steps. Your website, delivered in 2 days.
             </p>
           </div>
         </Container>
@@ -36,8 +34,8 @@ export default function ProcessPage() {
       </Section>
 
       <CTASection
-        title="Ready to start the discovery call?"
-        description="Tell us a bit about your project and we'll schedule a quick call to scope it out."
+        title="Ready to get started?"
+        description="Tell me about your business and I'll get back to you within one business day."
       />
     </>
   );

@@ -20,15 +20,11 @@ alter table contact_submissions enable row level security;
 create table if not exists quote_requests (
   id uuid primary key default gen_random_uuid(),
   created_at timestamptz not null default now(),
-  name text not null,
   email text not null,
-  phone text,
-  company text,
   website_type text not null,
-  features text[] not null default '{}',
-  budget_range text,
-  timeline text,
-  project_details text,
+  timeline text not null,
+  domain_status text not null,
+  idea text not null,
   status text not null default 'new' check (status in ('new', 'reviewing', 'quoted', 'won', 'lost'))
 );
 

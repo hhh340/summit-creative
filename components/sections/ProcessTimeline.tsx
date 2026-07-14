@@ -23,25 +23,10 @@ export function ProcessTimeline() {
               </div>
             </div>
             <div className="rounded-2xl border border-border bg-background p-8 sm:-mt-1">
-              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                <h3 className="text-xl font-semibold">{step.title}</h3>
-                <span className="text-sm font-medium text-brand">
-                  {step.duration}
-                </span>
-              </div>
+              <h3 className="text-xl font-semibold">{step.title}</h3>
               <p className="mt-3 leading-relaxed text-muted-foreground">
                 {step.description}
               </p>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {step.deliverables.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
             </div>
           </motion.div>
         ))}

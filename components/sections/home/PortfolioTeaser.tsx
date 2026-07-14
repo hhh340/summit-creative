@@ -13,8 +13,8 @@ export function PortfolioTeaser() {
       <Container>
         <SectionHeading
           eyebrow="Selected work"
-          title="A glimpse of what we build"
-          description="A few concept projects showing the range of industries and site types we design for."
+          title="A glimpse of what I build"
+          description="A few concept projects showing the kind of simple, clean sites I design."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

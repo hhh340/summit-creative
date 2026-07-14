@@ -5,43 +5,31 @@ export type FaqItem = {
 
 export const faqs: FaqItem[] = [
   {
-    question: "How long does a typical project take?",
+    question: "How long does it take?",
     answer:
-      "Most business websites take 2–4 weeks from kickoff to launch. Larger builds with ecommerce or custom features usually take 4–6 weeks. You'll get a specific timeline before any work begins.",
+      "Most websites are designed and delivered within 2 days after I have what I need from you.",
   },
   {
-    question: "How much does a website cost?",
-    answer:
-      "It depends on scope — see our Pricing page for starting ranges. Every project is scoped individually; use our project builder for an exact quote based on your specific needs.",
+    question: "How much does it cost?",
+    answer: "One flat price: $250. No tiers, no hidden add-ons.",
   },
   {
     question: "Do you write the content and copy?",
     answer:
-      "Yes — we can write persuasive, on-brand copy for your entire site, or work with content you already have. Just let us know what you need in your project request.",
+      "Yes — I can write simple, clear copy for your site, or use content you already have.",
   },
   {
-    question: "Can you redesign or migrate my existing website?",
+    question: "What if I need changes after it's done?",
     answer:
-      "Yes. We regularly redesign outdated sites and migrate existing content, so you don't lose what's already working — search rankings included.",
-  },
-  {
-    question: "Do you build ecommerce and payment features?",
-    answer:
-      "Yes — from simple payment buttons to full storefronts with Stripe, PayPal, Apple Pay, and Google Pay, plus inventory and customer accounts.",
-  },
-  {
-    question: "What happens after my site launches?",
-    answer:
-      "We offer ongoing support and update packages after launch, so your site keeps working as your business grows. Nothing is ever a one-and-done handoff.",
+      "You get two rounds of revisions included. After that, reach out and I'm happy to help with updates.",
   },
   {
     question: "Who owns the website once it's built?",
-    answer:
-      "You do. You own the code, the content, and the domain — always.",
+    answer: "You do. You own the content and the domain — always.",
   },
   {
-    question: "How does the quote process work?",
+    question: "How does the process work?",
     answer:
-      "Use our project builder to tell us about your business and what you need. We'll review it and come back with a clear plan, timeline, and price — usually within one business day.",
+      "Fill out the quote form with a bit about your business and your idea. I'll get back to you within one business day to get started.",
   },
 ];

@@ -18,19 +18,8 @@ export async function submitQuoteRequest(
     return { success: false, error: "Please check the form and try again." };
   }
 
-  const {
-    websiteType,
-    features,
-    budgetRange,
-    timeline,
-    projectDetails,
-    name,
-    email,
-    phone,
-    company,
-    website,
-    renderedAt,
-  } = parsed.data;
+  const { websiteType, timeline, domainStatus, idea, email, website, renderedAt } =
+    parsed.data;
 
   if (website) {
     return { success: true };
@@ -53,15 +42,11 @@ export async function submitQuoteRequest(
   const supabase = getSupabaseAdmin();
   if (supabase) {
     const { error } = await supabase.from("quote_requests").insert({
-      name,
       email,
-      phone: phone || null,
-      company: company || null,
       website_type: websiteType,
-      features,
-      budget_range: budgetRange,
       timeline,
-      project_details: projectDetails,
+      domain_status: domainStatus,
+      idea,
     });
     if (error) {
       console.error("Failed to store quote request:", error.message);
@@ -80,20 +65,15 @@ export async function submitQuoteRequest(
         from: process.env.RESEND_FROM_EMAIL!,
         to: notifyTo,
         replyTo: email,
-        subject: `New quote request from ${name} (${websiteType})`,
+        subject: `New quote request (${websiteType})`,
         text: [
-          `Name: ${name}`,
           `Email: ${email}`,
-          `Phone: ${phone || "—"}`,
-          `Company: ${company || "—"}`,
-          "",
           `Website type: ${websiteType}`,
-          `Features: ${features.length ? features.join(", ") : "None selected"}`,
-          `Budget: ${budgetRange}`,
           `Timeline: ${timeline}`,
+          `Domain status: ${domainStatus}`,
           "",
-          "Project details:",
-          projectDetails,
+          "Idea:",
+          idea,
         ].join("\n"),
       });
       if (error) {

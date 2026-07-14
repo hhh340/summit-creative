@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Summit Creative — tell us about your business and we'll get back to you within one business day.",
+    "Get in touch — tell me about your business and I'll get back to you within one business day.",
 };
 
 export default function ContactPage() {
@@ -22,9 +22,8 @@ export default function ContactPage() {
               Let&apos;s talk about your project
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Have a question, or not quite ready for a full project request?
-              Send us a message and we&apos;ll get back to you within one business
-              day.
+              Have a question, or not quite ready to send a full quote request?
+              Send a message and I&apos;ll get back to you within one business day.
             </p>
 
             <div className="mt-10 space-y-6 border-t border-border pt-8">
@@ -41,10 +40,10 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                  Have a detailed project in mind?
+                  Ready to get a quote?
                 </h3>
                 <a href="/quote" className="mt-1 block font-medium text-brand">
-                  Use our project builder instead →
+                  Use the quote form instead →
                 </a>
               </div>
             </div>

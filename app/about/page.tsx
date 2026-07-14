@@ -4,33 +4,34 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
 import { CTASection } from "@/components/sections/CTASection";
+import { SummitPath } from "@/components/illustrations/SummitPath";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Summit Creative is a boutique web design studio building premium, conversion-focused websites for ambitious businesses.",
+    "Summit Creative is a one-person web design studio helping small businesses get a great website without the agency price tag.",
 };
 
 const values = [
   {
-    title: "Craft over templates",
+    title: "Real attention to your project",
     description:
-      "Every site is designed around your brand and your customers — never a recycled theme with a new logo.",
+      "You're not one of a hundred accounts. I work on a small number of sites at a time, so yours gets real attention.",
   },
   {
-    title: "Clarity, always",
+    title: "Clear and honest",
     description:
-      "You'll always know your timeline, your price, and what happens next. No jargon, no surprises.",
+      "You'll always know what's happening and what it costs. No jargon, no confusing add-ons.",
   },
   {
-    title: "Built to perform",
+    title: "Fast turnaround",
     description:
-      "Beautiful design means nothing if it doesn't load fast, rank well, and turn visitors into customers.",
+      "No months-long waiting. Most sites are designed and delivered within 2 days.",
   },
   {
-    title: "A real partnership",
+    title: "Priced for small businesses",
     description:
-      "We treat your project like our own business is on the line — because your growth is our track record.",
+      "One flat, honest price — built for small businesses, not enterprise budgets.",
   },
 ];
 
@@ -42,24 +43,26 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Badge className="mx-auto">About Summit Creative</Badge>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-              We build websites like it&apos;s our own business on the line.
+              A student developer, helping small businesses grow online
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Summit Creative exists because too many businesses are stuck with
-              websites that look dated, load slowly, or simply don&apos;t
-              convert. We started this studio to build the kind of sites we&apos;d
-              want for our own business — premium, fast, and designed with one
-              goal: turning visitors into customers.
+              I&apos;m a 15-year-old student with real experience building
+              websites, and I started Summit Creative to help small businesses
+              get a website that actually looks professional — without paying
+              agency prices. I care about doing good work, and I&apos;m eager to
+              help your business make a great first impression online.
             </p>
           </div>
+
+          <SummitPath className="mx-auto mt-14 w-full max-w-xl" />
         </Container>
       </Section>
 
       <Section className="bg-muted/40">
         <Container>
           <SectionHeading
-            eyebrow="What we believe"
-            title="Principles we don't compromise on"
+            eyebrow="What you can expect"
+            title="Why small businesses work with me"
             align="left"
           />
           <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
@@ -75,29 +78,9 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      <Section>
-        <Container>
-          <div className="mx-auto max-w-3xl">
-            <SectionHeading
-              eyebrow="How we're structured"
-              title="A small, senior team — not a junior queue"
-              align="left"
-              className="mx-0"
-            />
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Summit Creative is run as a focused studio, not a volume agency.
-              That means every project gets direct attention from senior
-              designers and engineers — not handed off to whoever&apos;s free.
-              You&apos;ll talk to the people actually building your site, from the
-              first call to launch day and beyond.
-            </p>
-          </div>
-        </Container>
-      </Section>
-
       <CTASection
-        title="Let's build something worth showing off."
-        description="Tell us about your business and what you're trying to achieve — we'll tell you exactly how we'd approach it."
+        title="Let's build your website."
+        description="Tell me about your business and what you're looking for — I'll get back to you within one business day."
       />
     </>
   );

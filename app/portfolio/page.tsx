@@ -7,8 +7,7 @@ import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description:
-    "Explore Summit Creative's portfolio of concept projects across restaurants, medical practices, real estate, law firms, fitness studios, and ecommerce.",
+  description: "A look at the kind of simple, clean websites I build.",
 };
 
 export default function PortfolioPage() {
@@ -19,12 +18,11 @@ export default function PortfolioPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Badge className="mx-auto">Portfolio</Badge>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-              A glimpse of what we build
+              A glimpse of what I build
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              A selection of concept projects showing the range of industries
-              and site types we design for. Filter by category to see work
-              closest to yours.
+              A few concept projects showing the kind of simple, clean sites I
+              design. Filter by category to see work closest to yours.
             </p>
           </div>
         </Container>

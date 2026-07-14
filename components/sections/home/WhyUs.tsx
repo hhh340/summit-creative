@@ -4,24 +4,23 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const pillars = [
   {
-    title: "Premium design, not templates",
+    title: "Custom design, not templates",
     description:
-      "Every site is designed from scratch around your brand — never a recycled theme with your logo swapped in.",
+      "Your site is designed around your business — never a recycled theme with your logo swapped in.",
   },
   {
     title: "Built to convert",
     description:
-      "Clean layouts and clear calls-to-action turn visitors into inquiries, bookings, and sales — not just page views.",
+      "Clean layouts and clear calls-to-action turn visitors into inquiries and customers — not just page views.",
   },
   {
-    title: "Fast, transparent process",
-    description:
-      "A clear timeline and price up front, with regular check-ins — no disappearing for six weeks.",
+    title: "Fast and transparent",
+    description: "One flat price up front, and your site delivered in 2 days.",
   },
   {
-    title: "Built to scale with you",
+    title: "Priced for small business",
     description:
-      "Modern, maintainable code that can grow from a landing page into a full platform when you're ready.",
+      "No agency price tag. Just one honest, flat price built for small business budgets.",
   },
 ];
 
@@ -30,9 +29,9 @@ export function WhyUs() {
     <Section className="bg-muted/40">
       <Container>
         <SectionHeading
-          eyebrow="Why Summit Creative"
-          title="Design that earns trust. Engineering that holds up."
-          description="We treat your website like a product, not a project — because it's the first impression most of your customers will ever have of you."
+          eyebrow="Why work with me"
+          title="A great website shouldn't be complicated"
+          description="Your website is the first impression most of your customers will ever have of you. It should look the part."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2">

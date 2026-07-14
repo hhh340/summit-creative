@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
+import { BrowserMockup } from "@/components/illustrations/BrowserMockup";
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto max-w-3xl text-center"
         >
-          <Badge className="mx-auto">Premium web design & development</Badge>
+          <Badge className="mx-auto">Websites for small businesses</Badge>
 
           <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance sm:text-6xl">
             Built to impress.{" "}
@@ -27,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Summit Creative designs and builds premium websites for ambitious
+            Summit Creative designs and builds professional websites for small
             businesses — the kind that make visitors trust you before they
             even read a word.
           </p>
@@ -37,9 +38,18 @@ export function Hero() {
               Request a Quote
             </Button>
             <Button href="/portfolio" variant="secondary" size="lg">
-              View Our Work
+              View My Work
             </Button>
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="mx-auto mt-16 max-w-2xl"
+        >
+          <BrowserMockup className="w-full drop-shadow-xl" />
         </motion.div>
 
         <motion.dl
@@ -49,8 +59,8 @@ export function Hero() {
           className="mx-auto mt-20 grid max-w-3xl grid-cols-3 gap-6 border-t border-border pt-10"
         >
           {[
-            { value: "2–5 wk", label: "Typical timeline" },
-            { value: "20+", label: "Industries served" },
+            { value: "2 days", label: "Turnaround time" },
+            { value: "$250", label: "Flat price, no surprises" },
             { value: "100%", label: "Custom-built, no templates" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
