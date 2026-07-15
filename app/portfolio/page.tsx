@@ -21,8 +21,8 @@ export default function PortfolioPage() {
               A glimpse of what I build
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              A few concept projects showing the kind of simple, clean sites I
-              design. Filter by category to see work closest to yours.
+              A few real, live projects showing the kind of clean, professional
+              sites I design. Filter by category to see work closest to yours.
             </p>
           </div>
         </Container>

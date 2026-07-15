@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { CTASection } from "@/components/sections/CTASection";
 import { packagePrice, packageFeatures } from "@/content/pricing-data";
+import { TagIcon } from "@/components/illustrations/MiscIcons";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -32,7 +33,10 @@ export default function PricingPage() {
       <Section className="pt-0">
         <Container className="max-w-md">
           <div className="flex flex-col rounded-3xl border border-brand bg-brand-light/40 p-8 shadow-xl shadow-brand/10">
-            <h3 className="text-lg font-semibold">Website Package</h3>
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand text-white">
+              <TagIcon className="h-6 w-6" />
+            </div>
+            <h3 className="mt-5 text-lg font-semibold">Website Package</h3>
             <p className="mt-4 text-4xl font-semibold tracking-tight">
               {packagePrice}
               <span className="text-base font-normal text-muted-foreground">

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { CTASection } from "@/components/sections/CTASection";
 import { caseStudies } from "@/content/case-studies";
 import { cn } from "@/lib/utils";
@@ -57,6 +58,11 @@ export default async function CaseStudyPage({
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               {study.summary}
             </p>
+            <div className="mt-8">
+              <Button href={study.liveUrl} target="_blank" rel="noopener noreferrer" size="lg">
+                Visit Live Site ↗
+              </Button>
+            </div>
           </div>
 
           <div
@@ -67,7 +73,7 @@ export default async function CaseStudyPage({
             )}
           >
             <span className="rounded-full bg-black/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
-              Concept Project
+              Live Project
             </span>
           </div>
         </Container>
@@ -100,9 +106,16 @@ export default async function CaseStudyPage({
             <div className="space-y-8 rounded-2xl border border-border bg-muted/40 p-8 lg:col-span-1">
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                  Timeline
+                  Live Site
                 </h3>
-                <p className="mt-2 font-medium">{study.timeline}</p>
+                <a
+                  href={study.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 block font-medium text-brand hover:text-brand-dark"
+                >
+                  {study.liveUrl.replace("https://", "")} ↗
+                </a>
               </div>
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">

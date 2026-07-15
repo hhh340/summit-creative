@@ -6,87 +6,99 @@ export type CaseStudy = {
   summary: string;
   focusAreas: string[];
   gradient: string;
-  timeline: string;
+  liveUrl: string;
   services: string[];
   challenge: string;
   approach: string;
   outcome: string;
 };
 
-/**
- * Concept projects built to demonstrate style and range. These are
- * illustrative example brands, not real clients — replace with real case
- * studies as they become available.
- */
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "kettle-and-vine",
-    title: "Kettle & Vine",
-    industry: "Local Shop",
-    categories: ["Business website"],
+    slug: "verinno",
+    title: "Verinno",
+    industry: "Restaurant",
+    categories: ["Restaurant"],
     summary:
-      "A warm, simple site for a neighborhood coffee shop — hours, menu, and location, front and center.",
-    focusAreas: ["Menu page", "Hours & location", "Contact form"],
-    gradient: "from-amber-400 to-red-500",
-    timeline: "2 days",
+      "A fine dining Italian restaurant site built around reservations, a hand-crafted menu, and a warm, candlelit brand feel.",
+    focusAreas: ["Table reservations", "Menu & wine list", "Photo gallery", "Guest reviews"],
+    gradient: "from-red-700 to-amber-500",
+    liveUrl: "https://verinno-blue.vercel.app",
     services: ["Web Design", "Copywriting"],
     challenge:
-      "Customers couldn't find hours or the menu online, so they'd call to ask or just go somewhere else.",
+      "Fine dining restaurants need a site that feels as considered as the food — anything less undersells the experience before a guest ever sits down.",
     approach:
-      "A clean single-page site with the menu, hours, and location visible immediately — no digging required.",
+      "A slow, photography-led design with an always-visible reservation button, a menu that highlights signature dishes, and guest reviews woven throughout.",
     outcome:
-      "A concept site built to answer the three questions every visitor has in the first five seconds.",
+      "A site that sets the tone for the evening before guests even walk through the door.",
   },
   {
-    slug: "marlow-photography",
-    title: "Marlow Photography",
-    industry: "Freelancer",
-    categories: ["Portfolio / personal website"],
+    slug: "atlas-voyage",
+    title: "Atlas Voyage",
+    industry: "Travel",
+    categories: ["Travel"],
     summary:
-      "A simple, image-forward portfolio for a freelance photographer to show off their work.",
-    focusAreas: ["Photo gallery", "About section", "Contact form"],
-    gradient: "from-slate-500 to-slate-800",
-    timeline: "2 days",
-    services: ["Web Design"],
-    challenge:
-      "A photographer's work deserves more than a social media grid — but a full custom site felt out of reach.",
-    approach:
-      "A clean, photo-first layout that lets the work speak for itself, with an easy way for clients to get in touch.",
-    outcome:
-      "A concept portfolio built to make a strong first impression without competing with the photos.",
-  },
-  {
-    slug: "north-and-co",
-    title: "North & Co. Journal",
-    industry: "Blog",
-    categories: ["Blog"],
-    summary: "A clean, readable blog for a small brand sharing updates and stories.",
-    focusAreas: ["Post layout", "Easy navigation", "Mobile-friendly reading"],
-    gradient: "from-emerald-400 to-teal-600",
-    timeline: "2 days",
-    services: ["Web Design"],
-    challenge:
-      "A cluttered, hard-to-read blog layout was driving readers away before they finished a post.",
-    approach:
-      "A simple, distraction-free layout built around readability first.",
-    outcome: "A concept blog designed so the writing is what stands out.",
-  },
-  {
-    slug: "riverside-tutoring",
-    title: "Riverside Tutoring",
-    industry: "Small Business",
-    categories: ["Landing page"],
-    summary:
-      "A single, focused landing page for a local tutoring service to introduce itself and get inquiries.",
-    focusAreas: ["Clear offer", "Contact form", "Simple, trustworthy design"],
-    gradient: "from-indigo-500 to-violet-600",
-    timeline: "2 days",
+      "A luxury travel agency site for bespoke, private itineraries — built around destinations, curated tours, and a concierge-style planning request.",
+    focusAreas: ["Destination browsing", "Private tour packages", "Travel journal", "Trip inquiry form"],
+    gradient: "from-sky-600 to-amber-500",
+    liveUrl: "https://atlas-voyage-beige.vercel.app",
     services: ["Web Design", "Copywriting"],
     challenge:
-      "A new local business had no online presence at all, making it hard for parents to find or trust them.",
+      "A private travel agency needs to feel trustworthy and high-touch immediately — generic travel templates undercut that instantly.",
     approach:
-      "One focused page explaining who they help, how it works, and a simple way to reach out.",
+      "A destination-first layout with real trip pricing and detail, a journal for travel guides, and a simple way to start planning a trip.",
+    outcome: "A site built to make planning a serious trip feel like the start of one.",
+  },
+  {
+    slug: "cedar-and-bean",
+    title: "Cedar & Bean",
+    industry: "Cafe",
+    categories: ["Cafe"],
+    summary:
+      "A specialty coffee roaster and café site covering the menu, the roasting process, the team, and where to find them.",
+    focusAreas: ["Menu & seasonal drinks", "Roasting process", "Team bios", "Store locations & hours"],
+    gradient: "from-amber-700 to-orange-400",
+    liveUrl: "https://cedar-and-bean-tg2m.vercel.app",
+    services: ["Web Design", "Copywriting"],
+    challenge:
+      "A café's website needs to carry the same warmth as the room itself, while still answering the basics fast: what's on the menu, and when are you open.",
+    approach:
+      "A warm, story-driven design covering the menu, the roasting process, and the people behind the counter, with hours and locations easy to find.",
+    outcome: "A site that feels like the café, not just a page about it.",
+  },
+  {
+    slug: "second-story-vintage",
+    title: "Second Story Vintage",
+    industry: "Retail",
+    categories: ["Retail"],
+    summary:
+      "A boutique vintage clothing store site with shoppable collections, new arrivals, and a sustainability story.",
+    focusAreas: ["Shoppable collections", "New arrivals", "Impact stats", "Store hours & FAQ"],
+    gradient: "from-violet-500 to-fuchsia-600",
+    liveUrl: "https://s1234567h.vercel.app",
+    services: ["Web Design", "Copywriting", "Ecommerce"],
+    challenge:
+      "Vintage and secondhand shops live and die by feel — a generic ecommerce template flattens exactly what makes each piece special.",
+    approach:
+      "A collection-first shopping experience with condition grading, a clear sustainability story, and new arrivals front and center.",
     outcome:
-      "A concept page built to turn a Google search into a first inquiry.",
+      "A store that makes browsing secondhand pieces feel as considered as the pieces themselves.",
+  },
+  {
+    slug: "kingsman-barber",
+    title: "Kingsman Barber Co.",
+    industry: "Barbershop",
+    categories: ["Barbershop"],
+    summary:
+      "A modern barbershop site built around booking, the team, and clear package pricing.",
+    focusAreas: ["Online booking", "Barber profiles", "Package pricing", "Retail products"],
+    gradient: "from-slate-700 to-amber-500",
+    liveUrl: "https://kingsman-kohl.vercel.app",
+    services: ["Web Design", "Copywriting", "Booking"],
+    challenge:
+      "Barbershops sell craft and trust as much as haircuts — clients want to see who's behind the chair and know booking won't be a hassle.",
+    approach:
+      "A confident, old-world-meets-modern design with barber bios, clear package pricing, and booking always one click away.",
+    outcome: "A site built to turn a first-time visitor into a regular.",
   },
 ];

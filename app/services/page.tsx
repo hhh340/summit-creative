@@ -7,11 +7,20 @@ import { Button } from "@/components/ui/Button";
 import { CTASection } from "@/components/sections/CTASection";
 import { websiteTypes } from "@/content/services-data";
 import { packageFeatures } from "@/content/pricing-data";
+import {
+  BusinessIcon,
+  PortfolioIcon,
+  BlogIcon,
+  LandingPageIcon,
+} from "@/components/illustrations/ServiceIcons";
+import { TagIcon } from "@/components/illustrations/MiscIcons";
 
 export const metadata: Metadata = {
   title: "Services",
   description: "A simple, honest website package for small businesses.",
 };
+
+const typeIcons = [BusinessIcon, PortfolioIcon, BlogIcon, LandingPageIcon];
 
 export default function ServicesPage() {
   return (
@@ -43,22 +52,35 @@ export default function ServicesPage() {
             title="Built for small businesses"
             description="If you run a small business and need a website that looks professional, this is for you."
           />
-          <div className="mt-14 flex flex-wrap justify-center gap-3">
-            {websiteTypes.map((type) => (
-              <span
-                key={type}
-                className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium"
-              >
-                {type}
-              </span>
-            ))}
+          <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {websiteTypes.map((type, i) => {
+              const Icon = typeIcons[i % typeIcons.length];
+              return (
+                <div
+                  key={type}
+                  className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-background p-6 text-center"
+                >
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <span className="text-sm font-medium">{type}</span>
+                </div>
+              );
+            })}
           </div>
         </Container>
       </Section>
 
       <Section>
         <Container className="max-w-2xl">
-          <SectionHeading eyebrow="What's included" title="Everything you need to get online" />
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-light text-brand">
+            <TagIcon className="h-6 w-6" />
+          </div>
+          <SectionHeading
+            eyebrow="What's included"
+            title="Everything you need to get online"
+            className="mt-6"
+          />
 
           <ul className="mt-12 space-y-4">
             {packageFeatures.map((feature) => (

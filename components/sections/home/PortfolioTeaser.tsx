@@ -14,7 +14,7 @@ export function PortfolioTeaser() {
         <SectionHeading
           eyebrow="Selected work"
           title="A glimpse of what I build"
-          description="A few concept projects showing the kind of simple, clean sites I design."
+          description="A few real, live projects showing the kind of clean, professional sites I design."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

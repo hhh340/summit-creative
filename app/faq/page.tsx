@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/Badge";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { CTASection } from "@/components/sections/CTASection";
 import { faqs } from "@/content/faq-data";
+import { QuestionIcon } from "@/components/illustrations/MiscIcons";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -36,7 +37,10 @@ export default function FaqPage() {
       <Section className="pt-20 sm:pt-28">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
-            <Badge className="mx-auto">FAQ</Badge>
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-light text-brand">
+              <QuestionIcon className="h-6 w-6" />
+            </div>
+            <Badge className="mx-auto mt-6">FAQ</Badge>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
               Questions, answered
             </h1>

@@ -4,6 +4,12 @@ import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { siteConfig } from "@/lib/site-config";
+import {
+  MailIcon,
+  PhoneIcon,
+  FacebookIcon,
+  QuoteBubbleIcon,
+} from "@/components/illustrations/ContactIcons";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -27,24 +33,71 @@ export default function ContactPage() {
             </p>
 
             <div className="mt-10 space-y-6 border-t border-border pt-8">
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                  Email
-                </h3>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="mt-1 block font-medium text-brand"
-                >
-                  {siteConfig.email}
-                </a>
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <MailIcon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Email
+                  </h3>
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="mt-1 block font-medium text-brand"
+                  >
+                    {siteConfig.email}
+                  </a>
+                </div>
               </div>
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                  Ready to get a quote?
-                </h3>
-                <a href="/quote" className="mt-1 block font-medium text-brand">
-                  Use the quote form instead →
-                </a>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <PhoneIcon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Phone
+                  </h3>
+                  <a
+                    href={`tel:+1${siteConfig.phone}`}
+                    className="mt-1 block font-medium text-brand"
+                  >
+                    {siteConfig.phoneDisplay}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <FacebookIcon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Facebook
+                  </h3>
+                  <a
+                    href={siteConfig.links.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block font-medium text-brand"
+                  >
+                    Summit Creative ↗
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <QuoteBubbleIcon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Ready to get a quote?
+                  </h3>
+                  <a href="/quote" className="mt-1 block font-medium text-brand">
+                    Use the quote form instead →
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -58,22 +59,37 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      <Section className="bg-muted/40">
+      <Section className="bg-amber-50/60">
         <Container>
-          <SectionHeading
-            eyebrow="What you can expect"
-            title="Why small businesses work with me"
-            align="left"
-          />
-          <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
-            {values.map((value) => (
-              <div key={value.title}>
-                <h3 className="text-lg font-semibold">{value.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {value.description}
-                </p>
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="overflow-hidden rounded-3xl">
+              <Image
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1000&auto=format&fit=crop"
+                alt="A laptop and coffee on a desk, set up for focused design work"
+                width={700}
+                height={560}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
+            <div>
+              <SectionHeading
+                eyebrow="What you can expect"
+                title="Why small businesses work with me"
+                align="left"
+                className="mx-0"
+              />
+              <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
+                {values.map((value) => (
+                  <div key={value.title}>
+                    <h3 className="font-semibold">{value.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {value.description}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </Container>
       </Section>

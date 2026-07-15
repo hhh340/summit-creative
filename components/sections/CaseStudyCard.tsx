@@ -16,7 +16,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
         )}
       >
         <span className="rounded-full bg-black/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
-          Concept Project
+          Live Project
         </span>
       </div>
       <div className="p-6">

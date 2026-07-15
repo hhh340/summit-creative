@@ -4,11 +4,11 @@ export const siteConfig = {
   description:
     "Summit Creative designs and builds simple, professional websites for small businesses — one flat price, delivered in 2 days.",
   url: "https://summitcreative.co",
-  email: "hello@summitcreative.co",
+  email: "summitcreative31@gmail.com",
+  phone: "3465626849",
+  phoneDisplay: "(346) 562-6849",
   links: {
-    twitter: "https://twitter.com/summitcreative",
-    linkedin: "https://linkedin.com/company/summitcreative",
-    instagram: "https://instagram.com/summitcreative",
+    facebook: "https://www.facebook.com/profile.php?id=61591611073848",
   },
 } as const;
 

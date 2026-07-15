@@ -41,12 +41,28 @@ export function Footer() {
           <p className="text-sm text-night-muted">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <a
-            href={`mailto:${siteConfig.email}`}
-            className="text-sm text-night-muted transition-colors hover:text-night-foreground"
-          >
-            {siteConfig.email}
-          </a>
+          <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-6">
+            <a
+              href={siteConfig.links.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-night-muted transition-colors hover:text-night-foreground"
+            >
+              Facebook
+            </a>
+            <a
+              href={`tel:+1${siteConfig.phone}`}
+              className="text-sm text-night-muted transition-colors hover:text-night-foreground"
+            >
+              {siteConfig.phoneDisplay}
+            </a>
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="text-sm text-night-muted transition-colors hover:text-night-foreground"
+            >
+              {siteConfig.email}
+            </a>
+          </div>
         </div>
       </Container>
     </footer>
